@@ -248,6 +248,10 @@ border:1px solid var(--primary-color);
         background-color: #292A32;
         padding: 40px 60px;
     }
+    .middle .foot_form form{
+        display: flex;
+        flex-direction: column;
+    }
     .middle .foot_form input{
         padding: 20px 30px;
         width: fit-content;

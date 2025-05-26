@@ -82,10 +82,9 @@ const Team = () => {
                     className="profile-img"
                   />
                 </div>
-                <div className='team_header_content' >
-                <h3 className="name">{member.name}</h3>
-                <p className="title">{member.title}</p>
-
+                <div className="team_header_content">
+                  <h3 className="name">{member.name}</h3>
+                  <p className="title">{member.title}</p>
                 </div>
               </div>
               <hr className="divider" />
@@ -94,6 +93,10 @@ const Team = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="team_button">
+
+      <button>See all team</button>
       </div>
     </>
   );

@@ -94,7 +94,37 @@
   color: #191a23;
   transform: scale(1.1);
 }
-
+.team_button{
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+.team_button button{
+margin-top: 26px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 35px;
+    color: #ffffff;
+    background-color: var(--dark);
+    border: none;
+    border-radius: 14px;
+    width: fit-content;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+}
+.team_button button:hover{
+    background-color: var(--primary-color);
+    color: var(--dark);
+}
 /* Tablet Layout */
 @media (max-width: 1024px) {
   .team-container {
@@ -164,6 +194,14 @@
     height: 25px;
     top: 15px;
     right: 15px;
+  }
+  .team_button{
+    margin: 0;
+  }
+  .team_button button{
+    width: 95%;
+    margin: 0 auto;
+    
   }
 }
 

@@ -10,12 +10,12 @@ const TestimonialSwiper = () => {
   const swiperRef = useRef(null);
   const testimonials = [
     {
-      text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+      text: "The level of expertise and attention to detail from Positivus is unmatched. They've become an invaluable partner for our business.",
       name: "John Smith",
       role: "Marketing Director at XYZ Corp",
     },
     {
-      text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+      text: "The level of expertise and attention to detail from Positivus is unmatched. They've become an invaluable partner for our business.",
       name: "Sarah Johnson",
       role: "CEO at ABC Inc",
     },
