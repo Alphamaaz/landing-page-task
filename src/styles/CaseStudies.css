@@ -1,0 +1,107 @@
+/* Case Studies Container */
+.caseStudies_wrapper {
+    margin-top: 70px;
+    padding: 60px;
+    background-color: var(--dark);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 45px;
+    gap: 60px;
+  }
+  
+  /* Case Study Card */
+  .case_element {
+    display: flex;
+    min-width: 0; /* Allows text truncation */
+  }
+  
+  .case_element p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  /* Action Link */
+  .case_element .actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .actions:hover {
+    transform: translateX(5px);
+  }
+  
+  .actions span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  /* Vertical Divider */
+  .vertical_line {
+    width: 1px;
+    height: 170px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 0 60px;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .caseStudies_wrapper {
+      background: transparent;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 20px 16px;
+      scroll-padding: 16px;
+      gap: 16px;
+      margin-top: 40px;
+      border-radius: 0;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+  
+    /* Hide scrollbar but keep functionality */
+    .caseStudies_wrapper::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .case_element {
+      background-color: var(--dark);
+      border-radius: 24px;
+      padding: 32px;
+      scroll-snap-align: start;
+      flex: 0 0 85%;
+      min-width: 85%;
+      position: relative;
+      margin-right: 8px; /* Creates gap between cards */
+    }
+  
+    
+    .vertical_line {
+      display: none;
+    }
+  
+    .case_element p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .case_element .actions {
+      font-size: 16px;
+      margin-top: 16px;
+    }
+  
+    .actions span {
+      font-size: 16px;
+    }
+  }
+  
+  
