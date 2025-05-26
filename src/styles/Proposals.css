@@ -43,6 +43,15 @@ margin-top: 26px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+}
+.propsal_left button:hover{
+    background-color: var(--primary-color);
+    color: var(--dark);
 }
 .propsal_right{
     /* max-width: 500px; */

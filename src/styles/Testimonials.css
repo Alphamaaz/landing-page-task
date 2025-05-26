@@ -11,6 +11,7 @@
   padding: 40px 20px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 /* Swiper wrapper styles */
@@ -119,6 +120,10 @@ color: var(--primary-color);
   padding: 2rem 1rem;
   border-radius: 20px;
   margin-top: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /* Container styles */

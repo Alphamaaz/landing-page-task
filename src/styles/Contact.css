@@ -79,13 +79,93 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: #1a1a1a;
+  background-color: var(--primary-color);
+color: var(--dark);
+border:1px solid var(--dark );
 }
 
 .contact_wrapper .contact_right {
   display: none;
 }
+/* Quote Container Styles */
+.quote-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
+.inspirational-quote {
+  position: relative;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Georgia', serif;
+  color: #333;
+  border-left: 5px solid var(--primary-color, #B9FF66);
+  transition: all 0.3s ease;
+}
+
+.inspirational-quote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.inspirational-quote p {
+  font-size: 24px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+  color: #2c3e50;
+}
+
+.inspirational-quote p::before,
+.inspirational-quote p::after {
+  content: '"';
+  font-size: 32px;
+  color: var(--primary-color, #B9FF66);
+  opacity: 0.3;
+  position: absolute;
+}
+
+.inspirational-quote p::before {
+  top: -15px;
+  left: -25px;
+}
+
+.inspirational-quote p::after {
+  bottom: -30px;
+  right: -25px;
+}
+
+.inspirational-quote footer {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7f8c8d;
+  font-style: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inspirational-quote {
+    padding: 30px;
+  }
+  
+  .inspirational-quote p {
+    font-size: 20px;
+  }
+  
+  .inspirational-quote footer {
+    font-size: 16px;
+  }
+  
+  .inspirational-quote p::before,
+  .inspirational-quote p::after {
+    font-size: 28px;
+  }
+}
 /* Tablet Styles */
 @media (min-width: 768px) {
   .contact_wrapper {

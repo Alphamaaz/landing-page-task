@@ -44,6 +44,10 @@
   font-size: 24px;
   font-weight: bold;
 }
+.accordion-toggle img{
+  height: 50px;
+  width: 50px;
+}
 
 .accordion-content {
   padding: 0 24px 18px;

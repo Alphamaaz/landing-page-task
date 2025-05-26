@@ -32,6 +32,9 @@ function Navbar() {
             <a href="/">Use Cases</a>
           </li>
           <li>
+            <a href="/">Pricing</a>
+          </li>
+          <li>
             <a href="/">Blog</a>
           </li>
           <button className="cta">Request a quote</button>

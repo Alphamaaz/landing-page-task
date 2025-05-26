@@ -64,11 +64,14 @@
 }
 .middle .foot_form{
     display: flex;
-    gap: 20px;
     background-color: #292A32;
     padding: 40px 60px;
 }
-.middle .foot_form input{
+.middle .foot_form  form{
+     display: flex;
+    gap: 20px;
+}
+.middle .foot_form  form input{
     padding: 20px 30px;
     width: fit-content;
     background: transparent;
@@ -81,17 +84,31 @@
     font-size: 16px;
     font-weight: 400;
 }
-.middle .foot_form button{
+.middle .foot_form form button{
     font-size: 16px;
     font-weight: 400;
     padding: 20px 30px;
+    /* margin-left: 10px; */
     background-color: var(--primary-color);
     border-radius: 14px;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -ms-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    cursor: pointer;
 }
+
+.middle .foot_form button:hover{
+background-color: var(--dark);
+color: #FFFFFF;
+border:1px solid var(--primary-color);
+}
+
 
 .footer_wrpper .footer_divider {
     width: 100%;

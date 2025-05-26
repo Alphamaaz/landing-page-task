@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="/">Blog</a>
             </li>
           </ul>
-          <div className="social_icons" id='deskt'>
+          <div className="social_icons" id="deskt">
             <span>
               <img src={icon1} alt="linkedin" />
             </span>
@@ -52,8 +52,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="foot_form">
-          <input type="text" placeholder="Email" />
-          <button>Subscribe to news</button>
+          <form action="#">
+            <input type="text" placeholder="Email" />
+            <button>Subscribe to news</button>
+          </form>
         </div>
         <div className="social_icons mob">
           <span>
