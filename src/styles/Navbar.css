@@ -101,29 +101,41 @@
     .nav {
       position: relative;
      margin-top: 20px;
-     padding: 0 30px;
+     padding: 15px 30px 25px 30px;
       
     }
   
     .nav-right {
-      display: none;
-      width: 100%;
+      max-height: 0;
+      overflow: hidden;
       background-color: var(--primary-color);
       position: absolute;
       top: 100%;
       left: 0;
       right: 0;
-      padding: 40px;
+      padding: 0 40px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: max-height 0.6s ease, padding 0.3s ease;
     }
-  
+    
     .nav-right.open {
-      display: block;
+      max-height: 500px; /* Adjust this depending on your content */
+      padding: 15px 30px 30px;
     }
+    
+  .cta{
+    padding: 13px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
   
     .menu {
       flex-direction: column;
-      gap: 30px;
+      gap: 14px;
     }
     .menu li a{
       font-weight: 500;

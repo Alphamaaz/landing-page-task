@@ -150,6 +150,9 @@ border:1px solid var(--dark );
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .contact_wrapper{
+    padding: 0;
+  }
   .inspirational-quote {
     padding: 30px;
   }

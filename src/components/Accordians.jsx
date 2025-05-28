@@ -47,43 +47,48 @@ const Accordians = () => {
     <>
       <CommonHead
         title={"Our Working Process "}
-        description={<>Step-by-Step Guide to Achieving <br />Your Business Goals</>}
+        description={
+          <>
+            Step-by-Step Guide to Achieving <br className="desktop-break" />
+            Your Business Goals
+          </>
+        }
       />
 
       {/* Accordian Items  */}
-      
-    <div className="accordion-container">
-      {steps.map((step, index) => {
-        const isOpen = openIndex === index;
-        return (
-          <div key={index} className={`accordion-item ${isOpen ? "open" : ""}`}>
-            <button
-              className="accordion-header"
-              onClick={() => setOpenIndex(isOpen ? null : index)}
+
+      <div className="accordion-container">
+        {steps.map((step, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div
+              key={index}
+              className={`accordion-item ${isOpen ? "open" : ""}`}
             >
-              <span className="accordian_number">
-                <strong>{step.number}</strong> {step.title}
-              </span>
+              <button
+                className="accordion-header"
+                onClick={() => setOpenIndex(isOpen ? null : index)}
+              >
+                <span className="accordian_number">
+                  <strong>{step.number}</strong> {step.title}
+                </span>
 
-              <span className="accordion-toggle">
-                <img src={`${isOpen ? minus : plus}`} alt="" />{" "}
-              </span>
-            </button>
+                <span className="accordion-toggle">
+                  <img src={`${isOpen ? minus : plus}`} alt="" />{" "}
+                </span>
+              </button>
 
-            {/* line */}
-            {isOpen && step.content && (
-              <>
+              {/* line */}
+              <div
+                className={`accordion-content-wrapper ${isOpen ? "open" : ""}`}
+              >
                 <div className="accordian_line"></div>
                 <div className="accordion-content">{step.content}</div>
-              </>
-            )}
-          </div>
-        );
-      })}
-    </div>
-
-
-
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }

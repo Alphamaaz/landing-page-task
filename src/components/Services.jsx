@@ -16,12 +16,13 @@ const Services = () => {
         description={
           <>
             At our digital marketing agency, we offer a range of services to
-            <br /> help businesses grow and succeed online. These services
-            include:
+            <br className="desktop-break" /> help businesses grow and succeed
+            online. These services include:
           </>
         }
       />
-      <div className='margin'></div>
+
+      <div className="margin"></div>
       <div className="services_cards">
         <ServicesCards
           title_color={"var(--primary-color)"}

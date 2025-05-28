@@ -47,7 +47,7 @@ const Footer = () => {
           <p>Phone: 555-567-8901 </p>
           <p>
             {" "}
-            Address: 221B Baker Street <br />
+            Address: 221B Baker Street <br className="desktop-break" />
             London NW1 6XE{" "}
           </p>
         </div>

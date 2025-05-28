@@ -149,7 +149,7 @@
 /* Mobile Layout */
 @media (max-width: 640px) {
   .Team_wrapper {
-    margin-top: 40px;
+    margin-top: 25px;
     padding: 0 15px;
   }
   

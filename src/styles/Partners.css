@@ -23,12 +23,11 @@
         display: grid;
     grid-template-columns: repeat(3, 1fr); 
    margin-top: 30px;
-    /* padding: 30px; */
     gap: 20px;
     }
     .partners-logos img{
-        height: 40px;
-        width: 100px;
+        height: 35px;
+        width: 80px;
     }
     
 }

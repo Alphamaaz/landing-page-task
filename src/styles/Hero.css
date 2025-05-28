@@ -44,7 +44,7 @@
 .hero-wrapper .left button:hover{
     background-color: var(--primary-color);
 color: var(--dark);
-border:1px solid var(--dark);
+/* border:1px solid var(--dark); */
 }
   
 .hero_img_mob{

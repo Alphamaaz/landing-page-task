@@ -99,6 +99,8 @@ color: var(--primary-color);
     padding: 20px 30px;
     /*margin-left: 10px;
     */background-color: var(--primary-color);
+border:none;
+
     border-radius: 14px;
     cursor: pointer;
     -webkit-border-radius: 14px;
@@ -115,7 +117,6 @@ color: var(--primary-color);
 .middle .foot_form button:hover{
 background-color: var(--dark);
 color: #FFFFFF;
-border:1px solid var(--primary-color);
 }
 
 
@@ -241,6 +242,7 @@ border:1px solid var(--primary-color);
     .middle .foot_address{
         display: flex;
         flex-direction: column;margin-bottom: 20px;
+        text-align: center;
     
     }
     .middle .foot_address p{
@@ -312,4 +314,7 @@ border:1px solid var(--primary-color);
         background-color: #292A32;
         padding: 20px 30px;
     }
+    .footer_bottom .copy_right p{
+        font-size: 13px;
+      }
 }

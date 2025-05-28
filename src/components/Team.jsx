@@ -64,7 +64,8 @@ const Team = () => {
         title={"Team"}
         description={
           <>
-            Meet the skilled and experienced team behind our <br />
+            Meet the skilled and experienced team behind our{" "}
+            <br className="desktop-break" />
             successful digital marketing strategies
           </>
         }
@@ -95,8 +96,7 @@ const Team = () => {
         </div>
       </div>
       <div className="team_button">
-
-      <button>See all team</button>
+        <button>See all team</button>
       </div>
     </>
   );
