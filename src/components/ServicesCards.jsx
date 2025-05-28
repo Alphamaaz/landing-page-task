@@ -6,9 +6,15 @@ const ServicesCards = ({ bg_color, action_bg_color,text ,img ,txt_color,title_co
     <div className="service_card" style={{ backgroundColor: `${bg_color}` }}>
       <div className="card_content">
         <div className="card_inner">
-          <span style={{ backgroundColor: `${title_color}` }}>{text}</span>
-          <span><br /></span>
-          <span style={{ backgroundColor: `${title_color}` }}>{text2}</span>
+          <span className="h3" style={{ backgroundColor: `${title_color}` }}>
+            {text}
+          </span>
+          <span>
+            <br />
+          </span>
+          <span className="h3" style={{ backgroundColor: `${title_color}` }}>
+            {text2}
+          </span>
           <div className="card_action">
             {" "}
             <span
@@ -25,7 +31,9 @@ const ServicesCards = ({ bg_color, action_bg_color,text ,img ,txt_color,title_co
             </span>
           </div>
         </div>
-        <img src={img} alt="illustration_image" />
+        <div className="service_img_div">
+          <img src={img} alt="illustration_image" />
+        </div>
       </div>
     </div>
   );
