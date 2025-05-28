@@ -21,7 +21,7 @@ const Services = () => {
           </>
         }
       />
-
+      <div className='margin'></div>
       <div className="services_cards">
         <ServicesCards
           title_color={"var(--primary-color)"}
@@ -44,7 +44,7 @@ const Services = () => {
           action_txt_color={"var(--dark)"}
         />
       </div>
-      <div className="services_cards2">
+      <div className="services_cards">
         <ServicesCards
           title_color={"var(--gray)"}
           bg_color={"var(--dark)"}
@@ -66,7 +66,7 @@ const Services = () => {
           action_txt_color={"var(--dark)"}
         />
       </div>
-      <div className="services_cards2">
+      <div className="services_cards">
         <ServicesCards
           title_color={"var(--gray)"}
           bg_color={"var(--primary-color)"}

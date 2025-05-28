@@ -19,15 +19,18 @@
     font-size: 18px;
     font-weight: 400;
 }
-.services_cards{
+.margin{
     margin-top: 70px;
+}
+.services_cards{
+    
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 70px;
     align-items: center;
     
 }
-.services_cards2{
+/* .services_cards2{
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -35,7 +38,7 @@
 
     
     
-}
+} */
 .service_card{
     margin-top: 40px;
     position: relative;
@@ -66,6 +69,7 @@
     justify-content: space-between;
     
 }
+
 .service_card .card_content img{
     width: 210px;
     height: 190px;
@@ -136,22 +140,18 @@
         font-size: 16px;
         font-weight: 400;
     }
-
+ .margin{
+    margin-top: 50px;
+ }
     .services_cards{
-        margin-top: 50px;
+       
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
         align-items: center;
         
     }
-    .services_cards2{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-        
-    }
+   
     .service_card{
         margin-top: 20px;
     position: relative;
@@ -186,26 +186,20 @@
         font-weight: 400;
     }
     .services_cards{
-        margin: 30px;
+        /* margin: 30px; */
         display: flex;
         justify-content: space-between;
 
         align-items: center;
         
     }
-    .services_cards2{
-        display: flex;
-        flex-direction: column;
-        
-        align-items: center;
-        
-    }
+  
     .service_card{
-        margin-top: 20px;
+        /* margin-top: 20px; */
     position: relative;
     width: 350px;
-    height: 300px;
-    padding: 40px;
+    height: 260px;
+    padding: 26px 20px 20px 20px;
     }
     .service_card .service_img_div{
         display: flex;
