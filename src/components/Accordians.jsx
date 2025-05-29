@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import CommonHead from './CommonHead'
 import "../styles/Accordian.css"
 import minus from '../images/minus.svg'
 import plus from '../images/plus.svg'
@@ -45,15 +44,23 @@ const Accordians = () => {
   ];
   return (
     <>
-      <CommonHead
-        title={"Our Working Process "}
-        description={
-          <>
-            Step-by-Step Guide to Achieving <br className="desktop-break" />
-            Your Business Goals
-          </>
-        }
-      />
+      <div className="services">
+        <div className="services_tag">
+          <div className="working">
+            <span className="span">Our Working </span>
+            <span>
+              <br className="mobile-break" />
+            </span>
+            <span className="span"> Process </span>
+          </div>
+          <div className="services_desc">
+            <p>
+              Step-by-Step Guide to Achieving <br className="desktop-break" />{" "}
+              Your Business Goals
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Accordian Items  */}
 

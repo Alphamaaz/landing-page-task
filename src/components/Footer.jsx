@@ -43,6 +43,7 @@ const Footer = () => {
 
       <div className="middle">
         <div className="foot_address">
+          <span className='contact_tag' >Contact Us:</span>
           <p>Email: info@laynova.com</p>
           <p>Phone: 555-567-8901 </p>
           <p>

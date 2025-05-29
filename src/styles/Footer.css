@@ -59,6 +59,9 @@ color: var(--primary-color);
     justify-content: space-between;
     margin-top: 60px;
 }
+.middle .contact_tag{
+    display: none;
+}
 .middle .foot_address{
     display: flex;
     flex-direction: column;
@@ -182,6 +185,22 @@ color: #FFFFFF;
   
   @media(max-width:768px)
   {
+    .middle .contact_tag{
+        display: inline;
+        color: #000;
+        font-size: 20px;
+        padding: 8px 20px;
+        font-weight: 600;
+        width: fit-content;
+        margin: 0px  auto;
+        margin-bottom: 40px;
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
     #deskt{
         display: none;
     }
@@ -307,6 +326,7 @@ color: #FFFFFF;
 }
 @media(max-width:500px)
 {
+    
     .middle .foot_form{
         display: flex;
         flex-direction: column;
