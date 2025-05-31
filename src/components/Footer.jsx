@@ -4,6 +4,7 @@ import icon1 from '../images/Social icon.svg'
 import icon2 from '../images/Social icon (1).svg'
 import icon3 from '../images/Social icon (2).svg'
 import "../styles/Footer.css"
+import { NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className="footer_wrpper">
@@ -15,16 +16,16 @@ const Footer = () => {
         <div className="foot_menu">
           <ul>
             <li>
-              <a href="/">About</a>
+              <NavLink  to="/about">About</NavLink>
             </li>
             <li>
-              <a href="/">Services</a>
+              <NavLink to="/services">Services</NavLink>
             </li>
             <li>
-              <a href="/">Use Cases</a>
+              <NavLink to="/use-cases">Use Cases</NavLink>
             </li>
             <li>
-              <a href="/">Blog</a>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
           </ul>
           <div className="social_icons" id="deskt">

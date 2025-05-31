@@ -1,6 +1,6 @@
 .accordion-container {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 80px ;
 }
 
 .accordion-item {
@@ -10,10 +10,7 @@
   border-radius: 45px;
   box-shadow: 0px 5px 0px 0px #191a23;
   overflow: hidden;
-  transition: 
-    background-color 2s cubic-bezier(0.25, 0.1, 0.25, 1),
-    box-shadow 2s cubic-bezier(0.25, 0.1, 0.25, 1),
-    border-radius 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  
 }
 
 .accordion-item.open {
@@ -31,7 +28,7 @@
   align-items: center;
   cursor: pointer;
   text-align: left;
-  transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  
 }
 
 .accordian_number {
@@ -40,8 +37,8 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  transition: all 2s cubic-bezier(0.25, 0.1, 0.25, 1);
   color: #000;
+  
 }
 
 .accordian_number strong {
@@ -53,19 +50,16 @@
 .accordion-toggle {
   font-size: 24px;
   font-weight: bold;
-  transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .accordion-toggle img {
   height: 50px;
   width: 50px;
-  transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .accordion-content-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .accordion-content-wrapper.open {
@@ -79,9 +73,7 @@
   color: #333;
   opacity: 0;
   transform: translateY(-10px);
-  transition: 
-    opacity 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s,
-    transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s;
+  
 }
 
 .accordion-item.open .accordion-content {
@@ -95,7 +87,6 @@
   background-color: #191a23;
   margin: 30px auto;
   opacity: 0;
-  transition: opacity 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s;
 }
 
 .accordion-item.open .accordian_line {
@@ -129,7 +120,7 @@
 }
 .working .span{
   display: inline-block;
-  font-size: 40px;
+  font-size: 30px;
   border-radius: 7px !important;
   -webkit-border-radius: 7px !important;
   -moz-border-radius: 7px !important;

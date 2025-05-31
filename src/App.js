@@ -1,33 +1,33 @@
 import './App.css';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Partners from './components/Partners';
-import Services from './components/Services';
-import GetProposal from './components/GetProposal';
-import CaseStudies from './components/CaseStudies';
-import Accordians from './components/Accordians';
-import Team from './components/Team';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from './pages/About';
+import Services from './pages/Services';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import UseCases from './pages/UseCases';
+import Pricing from './pages/Pricing';
+import Blog from './pages/Blog';
+
 
 
 function App() {
   return (
     <>
+      <Router>
         <Navbar />
-      <div className="App">
-        <Hero />
-        <Partners />
-        <Services />
-        <GetProposal />
-        <CaseStudies />
-        <Accordians />
-        <Team />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <div className='App'>
+          <Footer />
+        </div>
+      </Router>
     </>
   );
 }

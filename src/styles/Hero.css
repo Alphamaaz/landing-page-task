@@ -97,6 +97,7 @@ color: var(--dark);
         font-weight: 400;
         margin-bottom: 30px;
         line-height: 28px;
+        margin-top: 20px;
     
     }
     .hero-wrapper .left button {

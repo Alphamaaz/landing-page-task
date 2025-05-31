@@ -64,33 +64,92 @@ const Accordians = () => {
 
       {/* Accordian Items  */}
 
-      <div className="accordion-container">
+      <div className="w-full mt-[45px] md:mt-[80px] px-4 md:px-0">
         {steps.map((step, index) => {
           const isOpen = openIndex === index;
+
           return (
             <div
               key={index}
-              className={`accordion-item ${isOpen ? "open" : ""}`}
+              className={`
+          overflow-hidden
+          border border-[#191A23]
+          rounded-[20px] md:rounded-[45px]
+          shadow-[0px_3px_0px_0px_#191A23] md:shadow-[0px_5px_0px_0px_#191A23]
+          mb-[18px] md:mb-[30px] px-[10px] py-[10px]
+           md:px-[40px] md:py-[30px]
+          transition-colors
+          ${isOpen ? "bg-[var(--primary-color)]" : "bg-white"}
+        `}
             >
+              {/* ─────────── Header ─────────── */}
               <button
-                className="accordion-header"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
+                className="
+            w-full
+            flex justify-between items-center
+            text-left
+            text-black
+              md:px-[24px] md:py-[18px]
+          "
               >
-                <span className="accordian_number">
-                  <strong>{step.number}</strong> {step.title}
+                {/* number + title */}
+                <span
+                  className="
+              flex items-center
+              gap-[15px] md:gap-[30px]
+              text-[16px] md:text-[30px] font-normal
+            "
+                >
+                  <strong className="text-[26px] md:text-[60px] font-[500]">
+                    {step.number}
+                  </strong>
+                  {step.title}
                 </span>
 
-                <span className="accordion-toggle">
-                  <img src={`${isOpen ? minus : plus}`} alt="" />{" "}
+                {/* plus / minus icon */}
+                <span>
+                  <img
+                    src={isOpen ? minus : plus}
+                    alt=""
+                    className="w-[24px] h-[24px] md:w-[50px] md:h-[50px]"
+                  />
                 </span>
               </button>
 
-              {/* line */}
+              {/* ─────────── Collapsible area ─────────── */}
               <div
-                className={`accordion-content-wrapper ${isOpen ? "open" : ""}`}
+                className={`
+                  max-h-0 overflow-hidden
+                  transition-[max-height] duration-[1500ms] ease-in-out
+                  ${isOpen ? "max-h-[1000px]" : ""}
+                `}
               >
-                <div className="accordian_line"></div>
-                <div className="accordion-content">{step.content}</div>
+                {/* divider line */}
+                <div
+                  className={`
+                    w-full h-px bg-[#191A23]
+                    my-[20px] md:my-[30px]
+                    transition-opacity duration-[1500ms] ease-in-out
+                    ${isOpen ? "opacity-100" : "opacity-0"}
+                  `}
+                />
+
+                {/* body text */}
+                <div
+                  className={`
+                    px-[12px] pb-[16px] md:px-[24px] md:pb-[18px]
+                    text-[16px] md:text-[18px] font-normal text-[#333]
+                    transition-all duration-[1500ms] ease-in-out
+                    ${
+                      isOpen
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-2"
+                    }
+                  `}
+                >
+                  {step.content}
+                </div>
               </div>
             </div>
           );
