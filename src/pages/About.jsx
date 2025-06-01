@@ -9,6 +9,7 @@ import CareValues from '../components/CareValues';
 import Group from '../components/Group';
 import Award from '../components/Award';
 import JoinTeam from '../components/JoinTeam';
+import BreakHead from './../components/BreakHead';
 
 const About = () => {
   const data = [
@@ -27,21 +28,19 @@ const About = () => {
           "At Laynova, we help business grow by combining creativity, innovation, and data- driven strategies. Together, we build a future of shared success."
         }
       />
-
-      <CommonHeadAbout
-        title={"Our Impact In Numbers"}
-        text={
-          <>
-            A snapshot of the milestones and achievements that drive our{" "}
-            <br className="desktop-break" /> success
-          </>
-        }
-        max_width={"1050px"}
+      <BreakHead span1={"Our Impact"} span2={"In Numbers"} gap={"200px"}
+      text={
+        <>
+        A snapshot of the milestones and achievements that drive our{" "}
+        <br className="desktop-break" /> success
+      </>
+      }
       />
+     
 
       {/* our impact section */}
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 mt-8 md:mt-[50px] ">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 mt-8 md:mt-[70px] ">
         {data.map((item, idx) => (
           <div
             key={idx}
@@ -77,7 +76,7 @@ const About = () => {
       />
 
       {/* first card */}
-      <div>
+      <div >
         <TimelineSection
           title={"The Beginning"}
           date={2020}
@@ -106,7 +105,7 @@ const About = () => {
         />
       </div>
       {/* 3rd card */}
-      <div className='relative items-center'>
+      <div className="relative items-center">
         <img
           src={right}
           alt="right"

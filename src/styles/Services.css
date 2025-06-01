@@ -11,7 +11,7 @@
 
 .services .services_title{
     background-color: var(--primary-color);
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
     padding: 5px
 }
@@ -35,7 +35,7 @@
     margin-top: 40px;
     position: relative;
     width: 580px;
-    height: 300px;
+    height: 280px;
     padding: 40px;
     border: 1px solid var(--dark);
     border-radius: 45px;
@@ -72,6 +72,7 @@
     font-weight: 500;
     border-radius: 8px;
     padding: 0 5px;
+    line-height: normal;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
@@ -198,7 +199,7 @@
     .service_card{
         margin-top: 20px;
     position: relative;
-    width: 350px;
+    width: 320px;
     height: 250px;
     padding: 26px 20px 20px 20px;
     }
@@ -207,20 +208,24 @@
         align-items: end;
     }
     .service_card .card_content img{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         
     }
-    .service_card .card_content .h3 {
-        font-size: 20px;
-        font-weight: 500;
-        display: inline;
-       
-    }
-    /* .service_card .card_content .card_action span{
-        font-size: 14px;
-    } */
+    @media(max-width:768px){
+        .service_card .card_content .h3 {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.2; /* Changed from 0% to 1.2 */
+          display: inline !important; /* Changed from inline */
+          margin-right: 4px; /* Optional small gap if needed */
+        }
+      }
    
+   .service_card .card_action .card_action_btn {
+    height: 30px;
+    width: 30px;
+   }
     .service_card .card_content .card_action .action_txt{
         font-size: 16px
     }

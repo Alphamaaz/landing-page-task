@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../styles/Accordian.css"
 import minus from '../images/minus.svg'
 import plus from '../images/plus.svg'
+import BreakHead from './BreakHead'
 const Accordians = () => {
   const [openIndex, setOpenIndex] = useState(0);
   const steps = [
@@ -44,23 +45,16 @@ const Accordians = () => {
   ];
   return (
     <>
-      <div className="services">
-        <div className="services_tag">
-          <div className="working">
-            <span className="span">Our Working </span>
-            <span>
-              <br className="mobile-break" />
-            </span>
-            <span className="span"> Process </span>
-          </div>
-          <div className="services_desc">
-            <p>
-              Step-by-Step Guide to Achieving <br className="desktop-break" />{" "}
-              Your Business Goals
-            </p>
-          </div>
-        </div>
-      </div>
+      <BreakHead
+        span1={"Our Working"}
+        span2={"Process "}
+        text={
+          <>
+            Step-by-Step Guide to Achieving <br className="desktop-break" />
+            Your Business Goals
+          </>
+        }
+      />
 
       {/* Accordian Items  */}
 

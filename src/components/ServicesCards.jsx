@@ -1,20 +1,19 @@
 import React from "react";
-// import img1 from "../images/Illustration.svg";
 import { ArrowUpRight } from "lucide-react";
 const ServicesCards = ({ bg_color, action_bg_color,text ,img ,txt_color,title_color,action_txt_color,text2}) => {
   return (
     <div className="service_card" style={{ backgroundColor: `${bg_color}` }}>
       <div className="card_content">
         <div className="card_inner">
-          <span className="h3" style={{ backgroundColor: `${title_color}` }}>
-            {text}
-          </span>
-          <span>
-            <br />
-          </span>
-          <span className="h3" style={{ backgroundColor: `${title_color}` }}>
-            {text2}
-          </span>
+          <div className="flex flex-col ">
+            <span className="h3" style={{ backgroundColor: `${title_color}` }}>
+              {text}
+            </span>
+            
+            <span className="h3" style={{ backgroundColor: `${title_color}` }}>
+              {text2}
+            </span>
+          </div>
           <div className="card_action">
             {" "}
             <span

@@ -1,102 +1,13 @@
-.accordion-container {
-  width: 100%;
-  margin-top: 80px ;
+
+.Head_Break{
+  margin-top: 100px;
 }
 
-.accordion-item {
-  padding: 30px 40px;
-  margin-bottom: 30px !important;
-  border: 1px solid #191a23;
-  border-radius: 45px;
-  box-shadow: 0px 5px 0px 0px #191a23;
-  overflow: hidden;
-  
-}
-
-.accordion-item.open {
-  background-color: var(--primary-color);
-}
-
-.accordion-header {
-  width: 100%;
-  color: #000;
-  padding: 18px 24px;
-  background: none;
-  border: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  text-align: left;
-  
-}
-
-.accordian_number {
-  font-size: 30px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  color: #000;
-  
-}
-
-.accordian_number strong {
-  font-size: 60px;
-  font-weight: 500;
-  color: #000;
-}
-
-.accordion-toggle {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.accordion-toggle img {
-  height: 50px;
-  width: 50px;
-}
-
-.accordion-content-wrapper {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.accordion-content-wrapper.open {
-  max-height: 1000px;
-}
-
-.accordion-content {
-  padding: 0 24px 18px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #333;
-  opacity: 0;
-  transform: translateY(-10px);
-  
-}
-
-.accordion-item.open .accordion-content {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.accordian_line {
-  width: 100%;
-  height: 1px;
-  background-color: #191a23;
-  margin: 30px auto;
-  opacity: 0;
-}
-
-.accordion-item.open .accordian_line {
-  opacity: 1;
-}
 .working .span{
   background-color: var(--primary-color);
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 600;
-  padding: 5px
+  padding: 6px
 
   
 }
@@ -120,55 +31,13 @@
 }
 .working .span{
   display: inline-block;
-  font-size: 30px;
+  font-size: 28px;
   border-radius: 7px !important;
   -webkit-border-radius: 7px !important;
   -moz-border-radius: 7px !important;
   -ms-border-radius: 7px !important;
   -o-border-radius: 7px !important;
 }
-  .accordion-item {
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 0px 0px #191a23;
-    
-  }
-
-  .accordion-header {
-    padding: 14px 16px;
-  }
-
-  .accordian_number {
-    font-size: 18px;
-    gap: 10px;
-  }
-
-  .accordian_number strong {
-    font-size: 28px;
-  }
-
-  .accordion-toggle img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .accordion-content {
-    font-size: 16px;
-    padding: 0 12px 16px;
-  }
-
-  .accordian_line {
-    margin: 20px 0;
-  }
+  
 }
 
-@media screen and (max-width: 500px) {
-  .accordion-container{
-    padding: 0;
-  }
-  .accordion-item {
-    padding: 0px;
-    margin-bottom: 18px !important;
-  }
-
-}
