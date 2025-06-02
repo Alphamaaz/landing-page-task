@@ -214,10 +214,9 @@
     }
     @media(max-width:768px){
         .service_card .card_content .h3 {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 500;
-          line-height: 1.2; /* Changed from 0% to 1.2 */
-          display: inline !important; /* Changed from inline */
+          padding: 2px;
           margin-right: 4px; /* Optional small gap if needed */
         }
       }

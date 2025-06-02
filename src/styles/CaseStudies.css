@@ -95,6 +95,7 @@
   .case_element .actions {
     font-size: 16px;
     margin-top: 16px;
+    cursor: pointer;
   }
 
   .actions span {

@@ -3,7 +3,7 @@ import vector from "../images/daimond.svg";
 
 const TimelineSection = ({ date, title, text }) => {
   return (
-    <div className="bg-white mt-8 md:mt-[60px] flex flex-col md:flex-row gap-4 md:gap-6">
+    <div className="App bg-white mt-8 md:mt-[60px] flex flex-col md:flex-row gap-4 md:gap-6 ">
       <div className="text-4xl md:text-[60px] font-medium md:font-[500] md:min-w-[120px]">
         {date}
       </div>

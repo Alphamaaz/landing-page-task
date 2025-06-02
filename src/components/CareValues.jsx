@@ -30,14 +30,14 @@ const CareValues = () => {
       },
     ];
   return (
-    <div>
+    <div className='App md:mt-[110px]'>
       <CommonHeadAbout
         title={"Care Values"}
         text={"At the heart of everything we do are our core values:"}
         max_width={"1100px"}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-[40px] gap-4 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-[60px] gap-4 md:gap-6">
         {data.map((item, index) => (
           <div
             key={index}

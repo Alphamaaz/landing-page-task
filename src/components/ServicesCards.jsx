@@ -5,12 +5,12 @@ const ServicesCards = ({ bg_color, action_bg_color,text ,img ,txt_color,title_co
     <div className="service_card" style={{ backgroundColor: `${bg_color}` }}>
       <div className="card_content">
         <div className="card_inner">
-          <div className="flex flex-col ">
+          <div className="">
             <span className="h3" style={{ backgroundColor: `${title_color}` }}>
               {text}
             </span>
-            
-            <span className="h3" style={{ backgroundColor: `${title_color}` }}>
+            <br />
+            <span className="h3 " style={{ backgroundColor: `${title_color}` }}>
               {text2}
             </span>
           </div>

@@ -29,7 +29,7 @@ const Award = () => {
       },
     ];
   return (
-    <div>
+    <div className='App md:mt-[110px]'>
       <CommonHeadAbout
         title={"Award & Recognition"}
         text={
@@ -42,7 +42,7 @@ const Award = () => {
         max_width={"1250px"}
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8 md:mt-[50px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8 md:mt-[60px]">
         {data.map((item, index) => (
           <div
             key={index}
